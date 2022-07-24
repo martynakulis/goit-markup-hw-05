@@ -57,7 +57,12 @@
             <h1 class="heading-title">efektywne rozwiązania </br> dla naszego biznesu</h1>
           </li>
           <li>
-            <button type="button" class="service">Zamów usługę</button>
+            <button type="button" class="service" data-modal-open>Zamów usługę</button>
+            <div class="backdrop is-hidden" data-modal>
+              <div class="modal">
+                <button type="button" class="backdrop-close" data-modal-close>X</button>
+              </div>  
+            </div>
           </li>
         </ul>  
     </header>
@@ -433,5 +438,6 @@
         </section>
       </div>  
     </footer>
+    <script src="/modal.js"></script>
   </body>
 </html>
